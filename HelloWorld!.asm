@@ -1,9 +1,9 @@
 .model small
-.stack 100h
+.stack 10h
 .data
 msg db "Hello World!$"
 .code
-main proc
+  main proc
     mov ax, @data
     mov ds, ax
 
@@ -13,6 +13,5 @@ main proc
 
     mov ah, 4Ch
     int 21h
-main endp
-
+  main endp
 end main
